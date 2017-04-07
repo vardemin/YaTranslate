@@ -21,6 +21,4 @@
         app:tabBackground="@color/colorWhite"
         app:tabIndicatorColor="@color/colorPrimaryDark"/>
 
-
-
 </LinearLayout>

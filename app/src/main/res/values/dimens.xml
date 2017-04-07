@@ -3,6 +3,12 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="logo_size">175dp</dimen>
+
+    <dimen name="dialog_size">300dp</dimen>
+
+    <dimen name="lang_code_width">75dp</dimen>
+
     <!-- History Item dimens -->
     <dimen name="item_history_expand_size">50dp</dimen>
     <dimen name="item_history_collapse_size">40dp</dimen>
@@ -12,6 +18,9 @@
     <dimen name="item_history_translate_text_size">17sp</dimen>
     <dimen name="item_history_lang_text_size">17sp</dimen>
     <dimen name="item_history_date_text_size">15sp</dimen>
+
+    <!-- Translate dimens -->
+    <dimen name="lang_bar_height">50dp</dimen>
 
     <!-- Layout dimens -->
     <dimen name="offset_small">2dp</dimen>

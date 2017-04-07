@@ -13,7 +13,7 @@
         android:id="@+id/panel_translate_langs"
         android:layout_below="@id/progress_translate"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/lang_bar_height"
         android:orientation="horizontal">
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_lang_primary"

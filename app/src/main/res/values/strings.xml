@@ -17,4 +17,7 @@
     <string name="default_secondary_code">ru</string>
     <string name="choose_lang">Select language</string>
     <string name="clean">Remove all</string>
+    <string name="logo_desc">Logo Image</string>
+    <string name="desc_history_btn">History button</string>
+    <string name="desc_navigate_translate">Navigate translate</string>
 </resources>

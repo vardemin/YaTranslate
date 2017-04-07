@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:minWidth="300dp"
+    android:minWidth="@dimen/dialog_size"
     android:background="@color/colorTransparent">
     <TextView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:id="@+id/recycler_langs_dialog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:minWidth="300dp">
+        android:minWidth="@dimen/dialog_size">
 
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>
