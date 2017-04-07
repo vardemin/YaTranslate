@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ЯПереводчик</string>
+    <string name="tab_tr">Перевод</string>
+    <string name="tab_hs">История</string>
+    <string name="tab_fv">Избранное</string>
+    <string name="search_history">Поиск в истории</string>
+    <string name="search_favorite">Поиск в избранном</string>
+    <string name="search">Поиск</string>
+    <string name="copyright">Переведено сервисом «Яндекс.Переводчик»</string>
+    <string name="api_ui">ru</string>
+    <string name="default_secondary_lang">Английский</string>
+    <string name="default_primary_lang">Русский</string>
+    <string name="default_primary_code">ru</string>
+    <string name="default_secondary_code">en</string>
+    <string name="choose_lang">Выберите язык</string>
+    <string name="clean">Очистить</string>
+</resources>

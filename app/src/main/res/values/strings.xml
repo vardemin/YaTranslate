@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">YaTranslate</string>
+    <string name="tab_tr">Translate</string>
+    <string name="tab_hs">History</string>
+    <string name="tab_fv">Favorites</string>
+    <string name="search_history">Search in history</string>
+    <string name="search_favorite">Search in favorites</string>
+    <string name="search">Search</string>
+    <string name="desc_expand" translatable="false">expand</string>
+    <string name="desc_collapse" translatable="false">collapse</string>
+    <string name="copyright">Translated by Yandex.Translate</string>
+    <string name="copyright_link" translatable="false">http://translate.yandex.ru/</string>
+    <string name="api_ui">en</string>
+    <string name="default_secondary_lang">Russian</string>
+    <string name="default_primary_lang">English</string>
+    <string name="default_primary_code">en</string>
+    <string name="default_secondary_code">ru</string>
+    <string name="choose_lang">Select language</string>
+    <string name="clean">Remove all</string>
+</resources>

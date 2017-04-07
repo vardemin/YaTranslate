@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'me.tatarka.retrolambda'
+apply from: 'configuration.gradle'
+
+android {
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
+    defaultConfig {
+        applicationId "vardemin.com.yatranslate"
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
+        versionCode project.versionCode
+        versionName project.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //support
+    compile "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    compile "com.android.support:design:${supportLibraryVersion}"
+    compile "com.android.support:cardview-v7:${supportLibraryVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+
+    //ViewPager Transforms
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+
+    //DI
+    compile "com.google.dagger:dagger:${daggerVersion}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
+    compile 'javax.inject:javax.inject:1'
+
+    //ButterKnife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    //RxJava
+    compile "io.reactivex.rxjava2:rxjava:2.0.7"
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //Retrofit
+    compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    compile "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    compile "com.squareup.okhttp3:okhttp:${okhttpVersion}"
+
+    //EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //TESTS
+    testCompile "org.robolectric:robolectric:3.3.2"
+    testCompile 'junit:junit:4.12'
+}

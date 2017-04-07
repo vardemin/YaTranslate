@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/logo_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_weight="2"/>
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:src="@drawable/icon"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+        <TextView
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright_link"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
